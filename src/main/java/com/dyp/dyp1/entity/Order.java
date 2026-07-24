@@ -18,7 +18,7 @@ public class Order {
 	private Long id;
 	private int quantity;
 	private double total_payment;
-	private LocalDateTime orderDate;
+	private LocalDateTime orderDate = LocalDateTime.now() ;
 	
 	@ManyToOne
 	@JoinColumn(name="product_id")

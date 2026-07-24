@@ -1,30 +1,28 @@
 package com.dyp.dyp1.dto;
 
+
 public class OrderDTO {
 	private Long productid;
 	private Long customerid;
 	private int quantity;
-	
-	// utility functions
-	public void setCustomerId(Long custId) {
-		this.customerid = custId;
-	}
-	
-	public Long getCustomerId() {
-		return customerid;
-	}
-	
-	public void setProductId(Long proId) {
-		this.productid = proId;
-	}
-	
-	public Long getProductId() {
+	public Long getProductid() {
 		return productid;
 	}
-	public Integer getQuatity() {
+	public void setProductid(Long productid) {
+		this.productid = productid;
+	}
+	public Long getCustomerid() {
+		return customerid;
+	}
+	public void setCustomerid(Long customerid) {
+		this.customerid = customerid;
+	}
+	public int getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(Integer quant) {
-		this.quantity = quant;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
+	
+	
 }

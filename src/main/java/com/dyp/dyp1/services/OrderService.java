@@ -34,15 +34,15 @@ public class OrderService {
 	}
 	
 	public void saveOrd(OrderDTO dto) {
-		Long pro_id = dto.getProductId();
-		Long cust_id = dto.getCustomerId();
+		Long pro_id = dto.getProductid();
+		Long cust_id = dto.getCustomerid();
 		
 		Product pro = pro_repo.getById(pro_id);
 		Customer cust = cust_repo.getById(cust_id);
 		
 		Order ord = new Order();
-		ord.setQuantity(dto.getQuatity());
-		ord.setTotal_payment(dto.getQuatity() * pro.getPrice());
+		ord.setQuantity(dto.getQuantity());
+		ord.setTotal_payment(dto.getQuantity() * pro.getPrice());
 		ord.setCutomer(cust);
 		ord.setProduct(pro);
 		

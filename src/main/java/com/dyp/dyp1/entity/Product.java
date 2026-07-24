@@ -21,6 +21,12 @@ public class Product {
 	private int stock;
 	
 	public Product() {}
+	public Product (String name, String desc, double p, int s) {
+		this.name = name;
+		this.description = desc;
+		this.price = p;
+		this.stock = s;
+	}
 	
 	public Product(Long id, String name) {}
 	
